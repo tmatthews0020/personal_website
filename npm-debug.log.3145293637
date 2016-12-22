@@ -1,0 +1,1552 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData typings
+20 silly mapToRegistry name typings
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/typings
+24 verbose request uri https://registry.npmjs.org/typings
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 3:55:48 PM
+27 verbose request id c559755621db257c
+28 verbose etag "BQGAB2L6OCG9ZF13PPTSH3H2B"
+29 http request GET https://registry.npmjs.org/typings
+30 http 200 https://registry.npmjs.org/typings
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   etag: '"2774KMQVV1MYCR91XUFSTAE4Y"',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '19244',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Wed, 12 Oct 2016 19:55:48 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '73',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-atl6237-ATL',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '1',
+31 verbose headers   'x-timer': 'S1476302148.908310,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly get     etag: '"2774KMQVV1MYCR91XUFSTAE4Y"',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '19244',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Wed, 12 Oct 2016 19:55:48 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '73',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-atl6237-ATL',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '1',
+32 silly get     'x-timer': 'S1476302148.908310,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving typings to /home/todd/.npm/registry.npmjs.org/typings/.cache.json
+34 silly resolveWithNewModule typings@0.7.12 checking installable status
+35 silly cache add args [ 'typings@^0.7.12', null ]
+36 verbose cache add spec typings@^0.7.12
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'typings@^0.7.12',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'typings',
+37 silly cache add   rawSpec: '^0.7.12',
+37 silly cache add   spec: '>=0.7.12 <0.8.0',
+37 silly cache add   type: 'range' }
+38 silly addNamed typings@>=0.7.12 <0.8.0
+39 verbose addNamed ">=0.7.12 <0.8.0" is a valid semver range for typings
+40 silly addNameRange { name: 'typings', range: '>=0.7.12 <0.8.0', hasData: false }
+41 silly mapToRegistry name typings
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/typings
+45 verbose addNameRange registry:https://registry.npmjs.org/typings not in flight; fetching
+46 verbose get https://registry.npmjs.org/typings not expired, no request
+47 silly addNameRange number 2 { name: 'typings', range: '>=0.7.12 <0.8.0', hasData: true }
+48 silly addNameRange versions [ 'typings',
+48 silly addNameRange   [ '0.0.0',
+48 silly addNameRange     '0.0.2',
+48 silly addNameRange     '0.0.3',
+48 silly addNameRange     '0.0.4',
+48 silly addNameRange     '0.0.5',
+48 silly addNameRange     '0.0.6',
+48 silly addNameRange     '0.0.7',
+48 silly addNameRange     '0.0.8',
+48 silly addNameRange     '0.0.9',
+48 silly addNameRange     '0.0.10',
+48 silly addNameRange     '0.0.11',
+48 silly addNameRange     '0.0.12',
+48 silly addNameRange     '0.0.13',
+48 silly addNameRange     '0.1.0',
+48 silly addNameRange     '0.1.1',
+48 silly addNameRange     '0.1.2',
+48 silly addNameRange     '0.1.3',
+48 silly addNameRange     '0.1.4',
+48 silly addNameRange     '0.1.5',
+48 silly addNameRange     '0.1.6',
+48 silly addNameRange     '0.1.7',
+48 silly addNameRange     '0.2.0',
+48 silly addNameRange     '0.2.1',
+48 silly addNameRange     '0.2.2',
+48 silly addNameRange     '0.2.3',
+48 silly addNameRange     '0.2.4',
+48 silly addNameRange     '0.3.0',
+48 silly addNameRange     '0.3.1',
+48 silly addNameRange     '0.3.2',
+48 silly addNameRange     '0.3.3',
+48 silly addNameRange     '0.3.4',
+48 silly addNameRange     '0.3.5',
+48 silly addNameRange     '0.4.0',
+48 silly addNameRange     '0.4.1',
+48 silly addNameRange     '0.5.0',
+48 silly addNameRange     '0.5.1',
+48 silly addNameRange     '0.5.2',
+48 silly addNameRange     '0.6.0',
+48 silly addNameRange     '0.6.1',
+48 silly addNameRange     '0.6.2',
+48 silly addNameRange     '0.6.3',
+48 silly addNameRange     '0.6.4',
+48 silly addNameRange     '0.6.5',
+48 silly addNameRange     '0.6.6',
+48 silly addNameRange     '0.6.7',
+48 silly addNameRange     '0.6.8',
+48 silly addNameRange     '0.6.9',
+48 silly addNameRange     '0.6.10',
+48 silly addNameRange     '0.7.0',
+48 silly addNameRange     '0.7.1',
+48 silly addNameRange     '0.7.2',
+48 silly addNameRange     '0.7.3',
+48 silly addNameRange     '0.7.4',
+48 silly addNameRange     '0.7.5',
+48 silly addNameRange     '0.7.6',
+48 silly addNameRange     '0.7.7',
+48 silly addNameRange     '0.7.8',
+48 silly addNameRange     '0.7.9',
+48 silly addNameRange     '0.7.10',
+48 silly addNameRange     '0.7.11',
+48 silly addNameRange     '0.7.12',
+48 silly addNameRange     '0.8.0',
+48 silly addNameRange     '0.8.1',
+48 silly addNameRange     '1.0.1',
+48 silly addNameRange     '1.0.2',
+48 silly addNameRange     '1.0.3',
+48 silly addNameRange     '1.0.4',
+48 silly addNameRange     '1.0.5',
+48 silly addNameRange     '1.1.0',
+48 silly addNameRange     '1.2.0',
+48 silly addNameRange     '1.3.0',
+48 silly addNameRange     '1.3.1',
+48 silly addNameRange     '1.3.2',
+48 silly addNameRange     '1.3.3',
+48 silly addNameRange     '1.4.0' ] ]
+49 silly addNamed typings@0.7.12
+50 verbose addNamed "0.7.12" is a plain semver version for typings
+51 silly cache afterAdd typings@0.7.12
+52 verbose afterAdd /home/todd/.npm/typings/0.7.12/package/package.json not in flight; writing
+53 verbose afterAdd /home/todd/.npm/typings/0.7.12/package/package.json written
+54 silly fetchNamedPackageData typings-core
+55 silly mapToRegistry name typings-core
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry uri https://registry.npmjs.org/typings-core
+59 verbose request uri https://registry.npmjs.org/typings-core
+60 verbose request no auth needed
+61 info attempt registry request try #1 at 3:55:49 PM
+62 verbose etag "F24N4C6TRHF28HEHLVAES00UE"
+63 http request GET https://registry.npmjs.org/typings-core
+64 http 200 https://registry.npmjs.org/typings-core
+65 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+65 verbose headers   etag: '"33Q8LDTS8F6TN217IYIPB9YAE"',
+65 verbose headers   'content-type': 'application/json',
+65 verbose headers   'content-encoding': 'gzip',
+65 verbose headers   'cache-control': 'max-age=300',
+65 verbose headers   'content-length': '11347',
+65 verbose headers   'accept-ranges': 'bytes',
+65 verbose headers   date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+65 verbose headers   via: '1.1 varnish',
+65 verbose headers   age: '5',
+65 verbose headers   connection: 'keep-alive',
+65 verbose headers   'x-served-by': 'cache-atl6221-ATL',
+65 verbose headers   'x-cache': 'HIT',
+65 verbose headers   'x-cache-hits': '1',
+65 verbose headers   'x-timer': 'S1476302149.291502,VS0,VE0',
+65 verbose headers   vary: 'Accept-Encoding' }
+66 silly get cb [ 200,
+66 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+66 silly get     etag: '"33Q8LDTS8F6TN217IYIPB9YAE"',
+66 silly get     'content-type': 'application/json',
+66 silly get     'content-encoding': 'gzip',
+66 silly get     'cache-control': 'max-age=300',
+66 silly get     'content-length': '11347',
+66 silly get     'accept-ranges': 'bytes',
+66 silly get     date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+66 silly get     via: '1.1 varnish',
+66 silly get     age: '5',
+66 silly get     connection: 'keep-alive',
+66 silly get     'x-served-by': 'cache-atl6221-ATL',
+66 silly get     'x-cache': 'HIT',
+66 silly get     'x-cache-hits': '1',
+66 silly get     'x-timer': 'S1476302149.291502,VS0,VE0',
+66 silly get     vary: 'Accept-Encoding' } ]
+67 verbose get saving typings-core to /home/todd/.npm/registry.npmjs.org/typings-core/.cache.json
+68 silly resolveWithNewModule typings-core@0.2.16 checking installable status
+69 silly cache add args [ 'typings-core@^0.2.15', null ]
+70 verbose cache add spec typings-core@^0.2.15
+71 silly cache add parsed spec Result {
+71 silly cache add   raw: 'typings-core@^0.2.15',
+71 silly cache add   scope: null,
+71 silly cache add   name: 'typings-core',
+71 silly cache add   rawSpec: '^0.2.15',
+71 silly cache add   spec: '>=0.2.15 <0.3.0',
+71 silly cache add   type: 'range' }
+72 silly addNamed typings-core@>=0.2.15 <0.3.0
+73 verbose addNamed ">=0.2.15 <0.3.0" is a valid semver range for typings-core
+74 silly addNameRange { name: 'typings-core',
+74 silly addNameRange   range: '>=0.2.15 <0.3.0',
+74 silly addNameRange   hasData: false }
+75 silly mapToRegistry name typings-core
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/typings-core
+79 verbose addNameRange registry:https://registry.npmjs.org/typings-core not in flight; fetching
+80 verbose get https://registry.npmjs.org/typings-core not expired, no request
+81 silly addNameRange number 2 { name: 'typings-core', range: '>=0.2.15 <0.3.0', hasData: true }
+82 silly addNameRange versions [ 'typings-core',
+82 silly addNameRange   [ '0.0.0',
+82 silly addNameRange     '0.1.0',
+82 silly addNameRange     '0.1.1',
+82 silly addNameRange     '0.1.2',
+82 silly addNameRange     '0.2.0',
+82 silly addNameRange     '0.2.1',
+82 silly addNameRange     '0.2.2',
+82 silly addNameRange     '0.2.3',
+82 silly addNameRange     '0.2.4',
+82 silly addNameRange     '0.2.5',
+82 silly addNameRange     '0.2.6',
+82 silly addNameRange     '0.2.7',
+82 silly addNameRange     '0.2.8',
+82 silly addNameRange     '0.2.9',
+82 silly addNameRange     '0.2.10',
+82 silly addNameRange     '0.2.11',
+82 silly addNameRange     '0.2.12',
+82 silly addNameRange     '0.2.13',
+82 silly addNameRange     '0.2.14',
+82 silly addNameRange     '0.2.15',
+82 silly addNameRange     '0.2.16',
+82 silly addNameRange     '0.3.0',
+82 silly addNameRange     '0.3.1',
+82 silly addNameRange     '1.0.0',
+82 silly addNameRange     '1.0.1',
+82 silly addNameRange     '1.1.0',
+82 silly addNameRange     '1.1.1',
+82 silly addNameRange     '1.1.2',
+82 silly addNameRange     '1.1.3',
+82 silly addNameRange     '1.2.0',
+82 silly addNameRange     '1.2.1',
+82 silly addNameRange     '1.2.2',
+82 silly addNameRange     '1.2.3',
+82 silly addNameRange     '1.2.4',
+82 silly addNameRange     '1.3.0',
+82 silly addNameRange     '1.3.1',
+82 silly addNameRange     '1.3.2',
+82 silly addNameRange     '1.4.0',
+82 silly addNameRange     '1.4.1',
+82 silly addNameRange     '1.5.0',
+82 silly addNameRange     '1.6.0' ] ]
+83 silly addNamed typings-core@0.2.16
+84 verbose addNamed "0.2.16" is a plain semver version for typings-core
+85 silly cache afterAdd typings-core@0.2.16
+86 verbose afterAdd /home/todd/.npm/typings-core/0.2.16/package/package.json not in flight; writing
+87 verbose afterAdd /home/todd/.npm/typings-core/0.2.16/package/package.json written
+88 silly fetchNamedPackageData invariant
+89 silly mapToRegistry name invariant
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry uri https://registry.npmjs.org/invariant
+93 silly fetchNamedPackageData typescript
+94 silly mapToRegistry name typescript
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/typescript
+98 verbose request uri https://registry.npmjs.org/invariant
+99 verbose request no auth needed
+100 info attempt registry request try #1 at 3:55:50 PM
+101 verbose etag "BRKR1KLKH2490NF2D6ONHEAWK"
+102 http request GET https://registry.npmjs.org/invariant
+103 verbose request uri https://registry.npmjs.org/typescript
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 3:55:50 PM
+106 verbose etag "AN5HIMZFW2D87IJKE8PGOL2ZI"
+107 http request GET https://registry.npmjs.org/typescript
+108 http 200 https://registry.npmjs.org/invariant
+109 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+109 verbose headers   etag: '"6MF7FSN3YNL9WJGGGWTF8MI6R"',
+109 verbose headers   'content-type': 'application/json',
+109 verbose headers   'content-encoding': 'gzip',
+109 verbose headers   'cache-control': 'max-age=300',
+109 verbose headers   'content-length': '2929',
+109 verbose headers   'accept-ranges': 'bytes',
+109 verbose headers   date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+109 verbose headers   via: '1.1 varnish',
+109 verbose headers   age: '93',
+109 verbose headers   connection: 'keep-alive',
+109 verbose headers   'x-served-by': 'cache-atl6240-ATL',
+109 verbose headers   'x-cache': 'HIT',
+109 verbose headers   'x-cache-hits': '1',
+109 verbose headers   'x-timer': 'S1476302149.644740,VS0,VE0',
+109 verbose headers   vary: 'Accept-Encoding' }
+110 silly get cb [ 200,
+110 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+110 silly get     etag: '"6MF7FSN3YNL9WJGGGWTF8MI6R"',
+110 silly get     'content-type': 'application/json',
+110 silly get     'content-encoding': 'gzip',
+110 silly get     'cache-control': 'max-age=300',
+110 silly get     'content-length': '2929',
+110 silly get     'accept-ranges': 'bytes',
+110 silly get     date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+110 silly get     via: '1.1 varnish',
+110 silly get     age: '93',
+110 silly get     connection: 'keep-alive',
+110 silly get     'x-served-by': 'cache-atl6240-ATL',
+110 silly get     'x-cache': 'HIT',
+110 silly get     'x-cache-hits': '1',
+110 silly get     'x-timer': 'S1476302149.644740,VS0,VE0',
+110 silly get     vary: 'Accept-Encoding' } ]
+111 verbose get saving invariant to /home/todd/.npm/registry.npmjs.org/invariant/.cache.json
+112 silly resolveWithNewModule invariant@2.2.1 checking installable status
+113 silly cache add args [ 'invariant@^2.2.0', null ]
+114 verbose cache add spec invariant@^2.2.0
+115 silly cache add parsed spec Result {
+115 silly cache add   raw: 'invariant@^2.2.0',
+115 silly cache add   scope: null,
+115 silly cache add   name: 'invariant',
+115 silly cache add   rawSpec: '^2.2.0',
+115 silly cache add   spec: '>=2.2.0 <3.0.0',
+115 silly cache add   type: 'range' }
+116 silly addNamed invariant@>=2.2.0 <3.0.0
+117 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for invariant
+118 silly addNameRange { name: 'invariant', range: '>=2.2.0 <3.0.0', hasData: false }
+119 silly mapToRegistry name invariant
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry uri https://registry.npmjs.org/invariant
+123 verbose addNameRange registry:https://registry.npmjs.org/invariant not in flight; fetching
+124 verbose get https://registry.npmjs.org/invariant not expired, no request
+125 silly addNameRange number 2 { name: 'invariant', range: '>=2.2.0 <3.0.0', hasData: true }
+126 silly addNameRange versions [ 'invariant',
+126 silly addNameRange   [ '1.0.0',
+126 silly addNameRange     '1.0.1',
+126 silly addNameRange     '1.0.2',
+126 silly addNameRange     '2.0.0',
+126 silly addNameRange     '2.1.0',
+126 silly addNameRange     '2.1.1',
+126 silly addNameRange     '2.1.2',
+126 silly addNameRange     '2.1.3',
+126 silly addNameRange     '2.2.0',
+126 silly addNameRange     '2.2.1' ] ]
+127 silly addNamed invariant@2.2.1
+128 verbose addNamed "2.2.1" is a plain semver version for invariant
+129 silly cache afterAdd invariant@2.2.1
+130 verbose afterAdd /home/todd/.npm/invariant/2.2.1/package/package.json not in flight; writing
+131 verbose afterAdd /home/todd/.npm/invariant/2.2.1/package/package.json written
+132 http 200 https://registry.npmjs.org/typescript
+133 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+133 verbose headers   etag: '"A69JFOY873EFY0YKVK12KQ1EH"',
+133 verbose headers   'content-type': 'application/json',
+133 verbose headers   'content-encoding': 'gzip',
+133 verbose headers   'cache-control': 'max-age=300',
+133 verbose headers   'content-length': '74478',
+133 verbose headers   'accept-ranges': 'bytes',
+133 verbose headers   date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+133 verbose headers   via: '1.1 varnish',
+133 verbose headers   age: '212',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'x-served-by': 'cache-atl6242-ATL',
+133 verbose headers   'x-cache': 'HIT',
+133 verbose headers   'x-cache-hits': '42',
+133 verbose headers   'x-timer': 'S1476302149.635180,VS0,VE0',
+133 verbose headers   vary: 'Accept-Encoding' }
+134 silly get cb [ 200,
+134 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+134 silly get     etag: '"A69JFOY873EFY0YKVK12KQ1EH"',
+134 silly get     'content-type': 'application/json',
+134 silly get     'content-encoding': 'gzip',
+134 silly get     'cache-control': 'max-age=300',
+134 silly get     'content-length': '74478',
+134 silly get     'accept-ranges': 'bytes',
+134 silly get     date: 'Wed, 12 Oct 2016 19:55:49 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     age: '212',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-atl6242-ATL',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '42',
+134 silly get     'x-timer': 'S1476302149.635180,VS0,VE0',
+134 silly get     vary: 'Accept-Encoding' } ]
+135 verbose get saving typescript to /home/todd/.npm/registry.npmjs.org/typescript/.cache.json
+136 silly resolveWithNewModule typescript@1.8.9 checking installable status
+137 silly cache add args [ 'typescript@1.8.9', null ]
+138 verbose cache add spec typescript@1.8.9
+139 silly cache add parsed spec Result {
+139 silly cache add   raw: 'typescript@1.8.9',
+139 silly cache add   scope: null,
+139 silly cache add   name: 'typescript',
+139 silly cache add   rawSpec: '1.8.9',
+139 silly cache add   spec: '1.8.9',
+139 silly cache add   type: 'version' }
+140 silly addNamed typescript@1.8.9
+141 verbose addNamed "1.8.9" is a plain semver version for typescript
+142 silly mapToRegistry name typescript
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/typescript
+146 verbose addNameVersion registry:https://registry.npmjs.org/typescript not in flight; fetching
+147 verbose get https://registry.npmjs.org/typescript not expired, no request
+148 silly cache afterAdd typescript@1.8.9
+149 verbose afterAdd /home/todd/.npm/typescript/1.8.9/package/package.json not in flight; writing
+150 verbose afterAdd /home/todd/.npm/typescript/1.8.9/package/package.json written
+151 silly fetchNamedPackageData loose-envify
+152 silly mapToRegistry name loose-envify
+153 silly mapToRegistry using default registry
+154 silly mapToRegistry registry https://registry.npmjs.org/
+155 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+156 verbose request uri https://registry.npmjs.org/loose-envify
+157 verbose request no auth needed
+158 info attempt registry request try #1 at 3:55:50 PM
+159 verbose etag "CU1PQY5YZM23J3V0O9O2CV6B8"
+160 http request GET https://registry.npmjs.org/loose-envify
+161 http 304 https://registry.npmjs.org/loose-envify
+162 verbose headers { date: 'Wed, 12 Oct 2016 19:55:50 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   'cache-control': 'max-age=300',
+162 verbose headers   etag: '"CU1PQY5YZM23J3V0O9O2CV6B8"',
+162 verbose headers   age: '86',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-atl6231-ATL',
+162 verbose headers   'x-cache': 'HIT',
+162 verbose headers   'x-cache-hits': '1',
+162 verbose headers   'x-timer': 'S1476302150.371938,VS0,VE0',
+162 verbose headers   vary: 'Accept-Encoding' }
+163 silly get cb [ 304,
+163 silly get   { date: 'Wed, 12 Oct 2016 19:55:50 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     'cache-control': 'max-age=300',
+163 silly get     etag: '"CU1PQY5YZM23J3V0O9O2CV6B8"',
+163 silly get     age: '86',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-atl6231-ATL',
+163 silly get     'x-cache': 'HIT',
+163 silly get     'x-cache-hits': '1',
+163 silly get     'x-timer': 'S1476302150.371938,VS0,VE0',
+163 silly get     vary: 'Accept-Encoding' } ]
+164 verbose etag https://registry.npmjs.org/loose-envify from cache
+165 verbose get saving loose-envify to /home/todd/.npm/registry.npmjs.org/loose-envify/.cache.json
+166 silly resolveWithNewModule loose-envify@1.2.0 checking installable status
+167 silly cache add args [ 'loose-envify@^1.0.0', null ]
+168 verbose cache add spec loose-envify@^1.0.0
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'loose-envify@^1.0.0',
+169 silly cache add   scope: null,
+169 silly cache add   name: 'loose-envify',
+169 silly cache add   rawSpec: '^1.0.0',
+169 silly cache add   spec: '>=1.0.0 <2.0.0',
+169 silly cache add   type: 'range' }
+170 silly addNamed loose-envify@>=1.0.0 <2.0.0
+171 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+172 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+173 silly mapToRegistry name loose-envify
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+177 verbose addNameRange registry:https://registry.npmjs.org/loose-envify not in flight; fetching
+178 verbose get https://registry.npmjs.org/loose-envify not expired, no request
+179 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+180 silly addNameRange versions [ 'loose-envify', [ '1.0.0', '1.1.0', '1.2.0' ] ]
+181 silly addNamed loose-envify@1.2.0
+182 verbose addNamed "1.2.0" is a plain semver version for loose-envify
+183 silly cache afterAdd loose-envify@1.2.0
+184 verbose afterAdd /home/todd/.npm/loose-envify/1.2.0/package/package.json not in flight; writing
+185 verbose afterAdd /home/todd/.npm/loose-envify/1.2.0/package/package.json written
+186 silly fetchNamedPackageData js-tokens
+187 silly mapToRegistry name js-tokens
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+191 verbose request uri https://registry.npmjs.org/js-tokens
+192 verbose request no auth needed
+193 info attempt registry request try #1 at 3:55:51 PM
+194 verbose etag "5JCPCS4QDWIATJUNMJHTM0LIF"
+195 http request GET https://registry.npmjs.org/js-tokens
+196 http 304 https://registry.npmjs.org/js-tokens
+197 verbose headers { date: 'Wed, 12 Oct 2016 19:55:50 GMT',
+197 verbose headers   via: '1.1 varnish',
+197 verbose headers   'cache-control': 'max-age=300',
+197 verbose headers   etag: '"5JCPCS4QDWIATJUNMJHTM0LIF"',
+197 verbose headers   age: '253',
+197 verbose headers   connection: 'keep-alive',
+197 verbose headers   'x-served-by': 'cache-atl6227-ATL',
+197 verbose headers   'x-cache': 'HIT',
+197 verbose headers   'x-cache-hits': '4',
+197 verbose headers   'x-timer': 'S1476302150.828793,VS0,VE0',
+197 verbose headers   vary: 'Accept-Encoding' }
+198 silly get cb [ 304,
+198 silly get   { date: 'Wed, 12 Oct 2016 19:55:50 GMT',
+198 silly get     via: '1.1 varnish',
+198 silly get     'cache-control': 'max-age=300',
+198 silly get     etag: '"5JCPCS4QDWIATJUNMJHTM0LIF"',
+198 silly get     age: '253',
+198 silly get     connection: 'keep-alive',
+198 silly get     'x-served-by': 'cache-atl6227-ATL',
+198 silly get     'x-cache': 'HIT',
+198 silly get     'x-cache-hits': '4',
+198 silly get     'x-timer': 'S1476302150.828793,VS0,VE0',
+198 silly get     vary: 'Accept-Encoding' } ]
+199 verbose etag https://registry.npmjs.org/js-tokens from cache
+200 verbose get saving js-tokens to /home/todd/.npm/registry.npmjs.org/js-tokens/.cache.json
+201 silly resolveWithNewModule js-tokens@1.0.3 checking installable status
+202 silly cache add args [ 'js-tokens@^1.0.1', null ]
+203 verbose cache add spec js-tokens@^1.0.1
+204 silly cache add parsed spec Result {
+204 silly cache add   raw: 'js-tokens@^1.0.1',
+204 silly cache add   scope: null,
+204 silly cache add   name: 'js-tokens',
+204 silly cache add   rawSpec: '^1.0.1',
+204 silly cache add   spec: '>=1.0.1 <2.0.0',
+204 silly cache add   type: 'range' }
+205 silly addNamed js-tokens@>=1.0.1 <2.0.0
+206 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+207 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+208 silly mapToRegistry name js-tokens
+209 silly mapToRegistry using default registry
+210 silly mapToRegistry registry https://registry.npmjs.org/
+211 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+212 verbose addNameRange registry:https://registry.npmjs.org/js-tokens not in flight; fetching
+213 verbose get https://registry.npmjs.org/js-tokens not expired, no request
+214 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+215 silly addNameRange versions [ 'js-tokens',
+215 silly addNameRange   [ '0.1.0',
+215 silly addNameRange     '0.2.0',
+215 silly addNameRange     '0.3.0',
+215 silly addNameRange     '0.3.1',
+215 silly addNameRange     '0.4.0',
+215 silly addNameRange     '0.4.1',
+215 silly addNameRange     '1.0.0',
+215 silly addNameRange     '1.0.1',
+215 silly addNameRange     '1.0.2',
+215 silly addNameRange     '1.0.3',
+215 silly addNameRange     '2.0.0' ] ]
+216 silly addNamed js-tokens@1.0.3
+217 verbose addNamed "1.0.3" is a plain semver version for js-tokens
+218 silly cache afterAdd js-tokens@1.0.3
+219 verbose afterAdd /home/todd/.npm/js-tokens/1.0.3/package/package.json not in flight; writing
+220 verbose afterAdd /home/todd/.npm/js-tokens/1.0.3/package/package.json written
+221 silly loadAllDepsIntoIdealTree Finishing
+222 silly idealTree:prePrune rails-ng2@0.0.1
+222 silly idealTree:prePrune ├── abbrev@1.0.9
+222 silly idealTree:prePrune ├── agent-base@2.0.1
+222 silly idealTree:prePrune ├── angular2@2.0.0-beta.15
+222 silly idealTree:prePrune ├── ansi-regex@2.0.0
+222 silly idealTree:prePrune ├── ansi-styles@2.2.1
+222 silly idealTree:prePrune ├── any-promise@1.3.0
+222 silly idealTree:prePrune ├── archy@1.0.0
+222 silly idealTree:prePrune ├── array-uniq@1.0.3
+222 silly idealTree:prePrune ├── arrify@1.0.1
+222 silly idealTree:prePrune ├── async@0.9.2
+222 silly idealTree:prePrune ├── balanced-match@0.4.2
+222 silly idealTree:prePrune ├── bluebird@3.4.6
+222 silly idealTree:prePrune ├── boxen@0.3.1
+222 silly idealTree:prePrune ├── brace-expansion@1.1.6
+222 silly idealTree:prePrune ├── capture-stack-trace@1.0.0
+222 silly idealTree:prePrune ├── chalk@1.1.3
+222 silly idealTree:prePrune ├── clone@1.0.2
+222 silly idealTree:prePrune ├── code-point-at@1.0.0
+222 silly idealTree:prePrune ├── columnify@1.5.4
+222 silly idealTree:prePrune ├── combined-stream@0.0.7
+222 silly idealTree:prePrune ├── concat-map@0.0.1
+222 silly idealTree:prePrune ├── concat-stream@1.5.2
+222 silly idealTree:prePrune ├── configstore@2.1.0
+222 silly idealTree:prePrune ├── core-util-is@1.0.2
+222 silly idealTree:prePrune ├── create-error-class@3.0.2
+222 silly idealTree:prePrune ├── debug@2.2.0
+222 silly idealTree:prePrune ├── deep-extend@0.4.1
+222 silly idealTree:prePrune ├── defaults@1.0.3
+222 silly idealTree:prePrune ├── delayed-stream@0.0.5
+222 silly idealTree:prePrune ├── detect-indent@4.0.0
+222 silly idealTree:prePrune ├── dot-prop@3.0.0
+222 silly idealTree:prePrune ├── duplexer2@0.1.4
+222 silly idealTree:prePrune ├── error-ex@1.3.0
+222 silly idealTree:prePrune ├── es6-shim@0.35.1
+222 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+222 silly idealTree:prePrune ├── extend@3.0.0
+222 silly idealTree:prePrune ├── filled-array@1.1.0
+222 silly idealTree:prePrune ├── form-data@0.2.0
+222 silly idealTree:prePrune ├── fs.realpath@1.0.0
+222 silly idealTree:prePrune ├── function-bind@1.1.0
+222 silly idealTree:prePrune ├── glob@7.1.0
+222 silly idealTree:prePrune ├── got@5.6.0
+222 silly idealTree:prePrune ├── graceful-fs@4.1.9
+222 silly idealTree:prePrune ├── has-ansi@2.0.0
+222 silly idealTree:prePrune ├── has@1.0.1
+222 silly idealTree:prePrune ├── http-proxy-agent@1.0.0
+222 silly idealTree:prePrune ├── https-proxy-agent@1.0.0
+222 silly idealTree:prePrune ├── imurmurhash@0.1.4
+222 silly idealTree:prePrune ├── inflight@1.0.5
+222 silly idealTree:prePrune ├── inherits@2.0.3
+222 silly idealTree:prePrune ├── ini@1.3.4
+222 silly idealTree:prePrune ├── intl@1.2.5
+222 silly idealTree:prePrune ├── invariant@2.2.1
+222 silly idealTree:prePrune ├── is-absolute@0.2.5
+222 silly idealTree:prePrune ├── is-arrayish@0.2.1
+222 silly idealTree:prePrune ├── is-finite@1.0.1
+222 silly idealTree:prePrune ├── is-fullwidth-code-point@1.0.0
+222 silly idealTree:prePrune ├── is-npm@1.0.0
+222 silly idealTree:prePrune ├── is-obj@1.0.1
+222 silly idealTree:prePrune ├── is-plain-obj@1.1.0
+222 silly idealTree:prePrune ├── is-redirect@1.0.0
+222 silly idealTree:prePrune ├── is-relative@0.2.1
+222 silly idealTree:prePrune ├── is-retry-allowed@1.1.0
+222 silly idealTree:prePrune ├── is-stream@1.1.0
+222 silly idealTree:prePrune ├── is-unc-path@0.1.1
+222 silly idealTree:prePrune ├── is-utf8@0.2.1
+222 silly idealTree:prePrune ├── is-windows@0.1.1
+222 silly idealTree:prePrune ├── isarray@1.0.0
+222 silly idealTree:prePrune ├── isobject@2.1.0
+222 silly idealTree:prePrune ├── js-tokens@1.0.3
+222 silly idealTree:prePrune ├── latest-version@2.0.0
+222 silly idealTree:prePrune ├── listify@1.0.0
+222 silly idealTree:prePrune ├── lockfile@1.0.2
+222 silly idealTree:prePrune ├── loose-envify@1.2.0
+222 silly idealTree:prePrune ├── lowercase-keys@1.0.0
+222 silly idealTree:prePrune ├── make-error-cause@1.2.1
+222 silly idealTree:prePrune ├── make-error@1.2.1
+222 silly idealTree:prePrune ├── methods@1.1.2
+222 silly idealTree:prePrune ├── mime-db@1.12.0
+222 silly idealTree:prePrune ├── mime-types@2.0.14
+222 silly idealTree:prePrune ├── minimatch@3.0.3
+222 silly idealTree:prePrune ├── minimist@1.2.0
+222 silly idealTree:prePrune ├─┬ mkdirp@0.5.1
+222 silly idealTree:prePrune │ └── minimist@0.0.8
+222 silly idealTree:prePrune ├── ms@0.7.1
+222 silly idealTree:prePrune ├── node-status-codes@1.0.0
+222 silly idealTree:prePrune ├── nopt@1.0.10
+222 silly idealTree:prePrune ├── number-is-nan@1.0.0
+222 silly idealTree:prePrune ├── object-assign@4.1.0
+222 silly idealTree:prePrune ├── object.pick@1.1.2
+222 silly idealTree:prePrune ├── once@1.4.0
+222 silly idealTree:prePrune ├── os-homedir@1.0.1
+222 silly idealTree:prePrune ├── os-tmpdir@1.0.1
+222 silly idealTree:prePrune ├── osenv@0.1.3
+222 silly idealTree:prePrune ├─┬ package-json@2.4.0
+222 silly idealTree:prePrune │ └── semver@5.3.0
+222 silly idealTree:prePrune ├── parse-json@2.2.0
+222 silly idealTree:prePrune ├── path-is-absolute@1.0.0
+222 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+222 silly idealTree:prePrune ├── pinkie@2.0.4
+222 silly idealTree:prePrune ├── popsicle-proxy-agent@1.0.0
+222 silly idealTree:prePrune ├── popsicle-retry@2.0.0
+222 silly idealTree:prePrune ├── popsicle-status@1.0.2
+222 silly idealTree:prePrune ├── popsicle@5.0.1
+222 silly idealTree:prePrune ├── prepend-http@1.0.4
+222 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+222 silly idealTree:prePrune ├── promise-finally@2.2.1
+222 silly idealTree:prePrune ├── rc@1.1.6
+222 silly idealTree:prePrune ├── read-all-stream@3.1.0
+222 silly idealTree:prePrune ├── readable-stream@2.0.6
+222 silly idealTree:prePrune ├── reflect-metadata@0.1.2
+222 silly idealTree:prePrune ├── registry-auth-token@3.0.1
+222 silly idealTree:prePrune ├── registry-url@3.1.0
+222 silly idealTree:prePrune ├── repeating@2.0.1
+222 silly idealTree:prePrune ├── rimraf@2.5.4
+222 silly idealTree:prePrune ├── rxjs@5.0.0-beta.2
+222 silly idealTree:prePrune ├── semver-diff@2.1.0
+222 silly idealTree:prePrune ├── semver@5.0.3
+222 silly idealTree:prePrune ├── slide@1.1.6
+222 silly idealTree:prePrune ├── sort-keys@1.1.2
+222 silly idealTree:prePrune ├── string_decoder@0.10.31
+222 silly idealTree:prePrune ├── string-template@1.0.0
+222 silly idealTree:prePrune ├── string-width@1.0.2
+222 silly idealTree:prePrune ├── strip-ansi@3.0.1
+222 silly idealTree:prePrune ├── strip-bom@2.0.0
+222 silly idealTree:prePrune ├── strip-json-comments@1.0.4
+222 silly idealTree:prePrune ├── supports-color@2.0.0
+222 silly idealTree:prePrune ├── systemjs@0.19.26
+222 silly idealTree:prePrune ├── thenify@3.2.0
+222 silly idealTree:prePrune ├── throat@2.0.2
+222 silly idealTree:prePrune ├── timed-out@2.0.0
+222 silly idealTree:prePrune ├── touch@1.0.0
+222 silly idealTree:prePrune ├── tough-cookie@2.3.1
+222 silly idealTree:prePrune ├── typedarray@0.0.6
+222 silly idealTree:prePrune ├── typescript@1.8.10
+222 silly idealTree:prePrune ├─┬ typings-core@0.2.16
+222 silly idealTree:prePrune │ └── typescript@1.8.9
+222 silly idealTree:prePrune ├── typings@0.7.12
+222 silly idealTree:prePrune ├── unc-path-regex@0.1.2
+222 silly idealTree:prePrune ├── unzip-response@1.0.1
+222 silly idealTree:prePrune ├── update-notifier@0.6.3
+222 silly idealTree:prePrune ├── url-parse-lax@1.0.0
+222 silly idealTree:prePrune ├── util-deprecate@1.0.2
+222 silly idealTree:prePrune ├── uuid@2.0.3
+222 silly idealTree:prePrune ├── wcwidth@1.0.1
+222 silly idealTree:prePrune ├── when@3.7.7
+222 silly idealTree:prePrune ├── widest-line@1.0.0
+222 silly idealTree:prePrune ├── wordwrap@1.0.0
+222 silly idealTree:prePrune ├── wrappy@1.0.2
+222 silly idealTree:prePrune ├── write-file-atomic@1.2.0
+222 silly idealTree:prePrune ├── xdg-basedir@2.0.0
+222 silly idealTree:prePrune ├── xtend@4.0.1
+222 silly idealTree:prePrune ├── zip-object@0.1.0
+222 silly idealTree:prePrune └── zone.js@0.6.10
+223 silly loadIdealTree Finishing
+224 silly currentTree rails-ng2@0.0.1
+224 silly currentTree ├── abbrev@1.0.9
+224 silly currentTree ├── agent-base@2.0.1
+224 silly currentTree ├── angular2@2.0.0-beta.15
+224 silly currentTree ├── ansi-regex@2.0.0
+224 silly currentTree ├── ansi-styles@2.2.1
+224 silly currentTree ├── any-promise@1.3.0
+224 silly currentTree ├── archy@1.0.0
+224 silly currentTree ├── array-uniq@1.0.3
+224 silly currentTree ├── arrify@1.0.1
+224 silly currentTree ├── async@0.9.2
+224 silly currentTree ├── balanced-match@0.4.2
+224 silly currentTree ├── bluebird@3.4.6
+224 silly currentTree ├── boxen@0.3.1
+224 silly currentTree ├── brace-expansion@1.1.6
+224 silly currentTree ├── capture-stack-trace@1.0.0
+224 silly currentTree ├── chalk@1.1.3
+224 silly currentTree ├── clone@1.0.2
+224 silly currentTree ├── code-point-at@1.0.0
+224 silly currentTree ├── columnify@1.5.4
+224 silly currentTree ├── combined-stream@0.0.7
+224 silly currentTree ├── concat-map@0.0.1
+224 silly currentTree ├── concat-stream@1.5.2
+224 silly currentTree ├── configstore@2.1.0
+224 silly currentTree ├── core-util-is@1.0.2
+224 silly currentTree ├── create-error-class@3.0.2
+224 silly currentTree ├── debug@2.2.0
+224 silly currentTree ├── deep-extend@0.4.1
+224 silly currentTree ├── defaults@1.0.3
+224 silly currentTree ├── delayed-stream@0.0.5
+224 silly currentTree ├── detect-indent@4.0.0
+224 silly currentTree ├── dot-prop@3.0.0
+224 silly currentTree ├── duplexer2@0.1.4
+224 silly currentTree ├── error-ex@1.3.0
+224 silly currentTree ├── es6-shim@0.35.1
+224 silly currentTree ├── escape-string-regexp@1.0.5
+224 silly currentTree ├── extend@3.0.0
+224 silly currentTree ├── filled-array@1.1.0
+224 silly currentTree ├── form-data@0.2.0
+224 silly currentTree ├── fs.realpath@1.0.0
+224 silly currentTree ├── function-bind@1.1.0
+224 silly currentTree ├── glob@7.1.0
+224 silly currentTree ├── got@5.6.0
+224 silly currentTree ├── graceful-fs@4.1.9
+224 silly currentTree ├── has-ansi@2.0.0
+224 silly currentTree ├── has@1.0.1
+224 silly currentTree ├── http-proxy-agent@1.0.0
+224 silly currentTree ├── https-proxy-agent@1.0.0
+224 silly currentTree ├── imurmurhash@0.1.4
+224 silly currentTree ├── inflight@1.0.5
+224 silly currentTree ├── inherits@2.0.3
+224 silly currentTree ├── ini@1.3.4
+224 silly currentTree ├── intl@1.2.5
+224 silly currentTree ├── is-absolute@0.2.5
+224 silly currentTree ├── is-arrayish@0.2.1
+224 silly currentTree ├── is-finite@1.0.1
+224 silly currentTree ├── is-fullwidth-code-point@1.0.0
+224 silly currentTree ├── is-npm@1.0.0
+224 silly currentTree ├── is-obj@1.0.1
+224 silly currentTree ├── is-plain-obj@1.1.0
+224 silly currentTree ├── is-redirect@1.0.0
+224 silly currentTree ├── is-relative@0.2.1
+224 silly currentTree ├── is-retry-allowed@1.1.0
+224 silly currentTree ├── is-stream@1.1.0
+224 silly currentTree ├── is-unc-path@0.1.1
+224 silly currentTree ├── is-utf8@0.2.1
+224 silly currentTree ├── is-windows@0.1.1
+224 silly currentTree ├── isarray@1.0.0
+224 silly currentTree ├── isobject@2.1.0
+224 silly currentTree ├── latest-version@2.0.0
+224 silly currentTree ├── listify@1.0.0
+224 silly currentTree ├── lockfile@1.0.2
+224 silly currentTree ├── lowercase-keys@1.0.0
+224 silly currentTree ├── make-error-cause@1.2.1
+224 silly currentTree ├── make-error@1.2.1
+224 silly currentTree ├── methods@1.1.2
+224 silly currentTree ├── mime-db@1.12.0
+224 silly currentTree ├── mime-types@2.0.14
+224 silly currentTree ├── minimatch@3.0.3
+224 silly currentTree ├── minimist@1.2.0
+224 silly currentTree ├─┬ mkdirp@0.5.1
+224 silly currentTree │ └── minimist@0.0.8
+224 silly currentTree ├── ms@0.7.1
+224 silly currentTree ├── node-status-codes@1.0.0
+224 silly currentTree ├── nopt@1.0.10
+224 silly currentTree ├── number-is-nan@1.0.0
+224 silly currentTree ├── object-assign@4.1.0
+224 silly currentTree ├── object.pick@1.1.2
+224 silly currentTree ├── once@1.4.0
+224 silly currentTree ├── os-homedir@1.0.1
+224 silly currentTree ├── os-tmpdir@1.0.1
+224 silly currentTree ├── osenv@0.1.3
+224 silly currentTree ├─┬ package-json@2.4.0
+224 silly currentTree │ └── semver@5.3.0
+224 silly currentTree ├── parse-json@2.2.0
+224 silly currentTree ├── path-is-absolute@1.0.0
+224 silly currentTree ├── pinkie-promise@2.0.1
+224 silly currentTree ├── pinkie@2.0.4
+224 silly currentTree ├── popsicle-proxy-agent@1.0.0
+224 silly currentTree ├── popsicle-retry@2.0.0
+224 silly currentTree ├── popsicle-status@1.0.2
+224 silly currentTree ├── popsicle@5.0.1
+224 silly currentTree ├── prepend-http@1.0.4
+224 silly currentTree ├── process-nextick-args@1.0.7
+224 silly currentTree ├── promise-finally@2.2.1
+224 silly currentTree ├── rc@1.1.6
+224 silly currentTree ├── read-all-stream@3.1.0
+224 silly currentTree ├── readable-stream@2.0.6
+224 silly currentTree ├── reflect-metadata@0.1.2
+224 silly currentTree ├── registry-auth-token@3.0.1
+224 silly currentTree ├── registry-url@3.1.0
+224 silly currentTree ├── repeating@2.0.1
+224 silly currentTree ├── rimraf@2.5.4
+224 silly currentTree ├── rxjs@5.0.0-beta.2
+224 silly currentTree ├── semver-diff@2.1.0
+224 silly currentTree ├── semver@5.0.3
+224 silly currentTree ├── slide@1.1.6
+224 silly currentTree ├── sort-keys@1.1.2
+224 silly currentTree ├── string_decoder@0.10.31
+224 silly currentTree ├── string-template@1.0.0
+224 silly currentTree ├── string-width@1.0.2
+224 silly currentTree ├── strip-ansi@3.0.1
+224 silly currentTree ├── strip-bom@2.0.0
+224 silly currentTree ├── strip-json-comments@1.0.4
+224 silly currentTree ├── supports-color@2.0.0
+224 silly currentTree ├── systemjs@0.19.26
+224 silly currentTree ├── thenify@3.2.0
+224 silly currentTree ├── throat@2.0.2
+224 silly currentTree ├── timed-out@2.0.0
+224 silly currentTree ├── touch@1.0.0
+224 silly currentTree ├── tough-cookie@2.3.1
+224 silly currentTree ├── typedarray@0.0.6
+224 silly currentTree ├── typescript@1.8.10
+224 silly currentTree ├── unc-path-regex@0.1.2
+224 silly currentTree ├── unzip-response@1.0.1
+224 silly currentTree ├── update-notifier@0.6.3
+224 silly currentTree ├── url-parse-lax@1.0.0
+224 silly currentTree ├── util-deprecate@1.0.2
+224 silly currentTree ├── uuid@2.0.3
+224 silly currentTree ├── wcwidth@1.0.1
+224 silly currentTree ├── when@3.7.7
+224 silly currentTree ├── widest-line@1.0.0
+224 silly currentTree ├── wordwrap@1.0.0
+224 silly currentTree ├── wrappy@1.0.2
+224 silly currentTree ├── write-file-atomic@1.2.0
+224 silly currentTree ├── xdg-basedir@2.0.0
+224 silly currentTree ├── xtend@4.0.1
+224 silly currentTree ├── zip-object@0.1.0
+224 silly currentTree └── zone.js@0.6.10
+225 silly idealTree rails-ng2@0.0.1
+225 silly idealTree ├── abbrev@1.0.9
+225 silly idealTree ├── agent-base@2.0.1
+225 silly idealTree ├── angular2@2.0.0-beta.15
+225 silly idealTree ├── ansi-regex@2.0.0
+225 silly idealTree ├── ansi-styles@2.2.1
+225 silly idealTree ├── any-promise@1.3.0
+225 silly idealTree ├── archy@1.0.0
+225 silly idealTree ├── array-uniq@1.0.3
+225 silly idealTree ├── arrify@1.0.1
+225 silly idealTree ├── async@0.9.2
+225 silly idealTree ├── balanced-match@0.4.2
+225 silly idealTree ├── bluebird@3.4.6
+225 silly idealTree ├── boxen@0.3.1
+225 silly idealTree ├── brace-expansion@1.1.6
+225 silly idealTree ├── capture-stack-trace@1.0.0
+225 silly idealTree ├── chalk@1.1.3
+225 silly idealTree ├── clone@1.0.2
+225 silly idealTree ├── code-point-at@1.0.0
+225 silly idealTree ├── columnify@1.5.4
+225 silly idealTree ├── combined-stream@0.0.7
+225 silly idealTree ├── concat-map@0.0.1
+225 silly idealTree ├── concat-stream@1.5.2
+225 silly idealTree ├── configstore@2.1.0
+225 silly idealTree ├── core-util-is@1.0.2
+225 silly idealTree ├── create-error-class@3.0.2
+225 silly idealTree ├── debug@2.2.0
+225 silly idealTree ├── deep-extend@0.4.1
+225 silly idealTree ├── defaults@1.0.3
+225 silly idealTree ├── delayed-stream@0.0.5
+225 silly idealTree ├── detect-indent@4.0.0
+225 silly idealTree ├── dot-prop@3.0.0
+225 silly idealTree ├── duplexer2@0.1.4
+225 silly idealTree ├── error-ex@1.3.0
+225 silly idealTree ├── es6-shim@0.35.1
+225 silly idealTree ├── escape-string-regexp@1.0.5
+225 silly idealTree ├── extend@3.0.0
+225 silly idealTree ├── filled-array@1.1.0
+225 silly idealTree ├── form-data@0.2.0
+225 silly idealTree ├── fs.realpath@1.0.0
+225 silly idealTree ├── function-bind@1.1.0
+225 silly idealTree ├── glob@7.1.0
+225 silly idealTree ├── got@5.6.0
+225 silly idealTree ├── graceful-fs@4.1.9
+225 silly idealTree ├── has-ansi@2.0.0
+225 silly idealTree ├── has@1.0.1
+225 silly idealTree ├── http-proxy-agent@1.0.0
+225 silly idealTree ├── https-proxy-agent@1.0.0
+225 silly idealTree ├── imurmurhash@0.1.4
+225 silly idealTree ├── inflight@1.0.5
+225 silly idealTree ├── inherits@2.0.3
+225 silly idealTree ├── ini@1.3.4
+225 silly idealTree ├── intl@1.2.5
+225 silly idealTree ├── invariant@2.2.1
+225 silly idealTree ├── is-absolute@0.2.5
+225 silly idealTree ├── is-arrayish@0.2.1
+225 silly idealTree ├── is-finite@1.0.1
+225 silly idealTree ├── is-fullwidth-code-point@1.0.0
+225 silly idealTree ├── is-npm@1.0.0
+225 silly idealTree ├── is-obj@1.0.1
+225 silly idealTree ├── is-plain-obj@1.1.0
+225 silly idealTree ├── is-redirect@1.0.0
+225 silly idealTree ├── is-relative@0.2.1
+225 silly idealTree ├── is-retry-allowed@1.1.0
+225 silly idealTree ├── is-stream@1.1.0
+225 silly idealTree ├── is-unc-path@0.1.1
+225 silly idealTree ├── is-utf8@0.2.1
+225 silly idealTree ├── is-windows@0.1.1
+225 silly idealTree ├── isarray@1.0.0
+225 silly idealTree ├── isobject@2.1.0
+225 silly idealTree ├── js-tokens@1.0.3
+225 silly idealTree ├── latest-version@2.0.0
+225 silly idealTree ├── listify@1.0.0
+225 silly idealTree ├── lockfile@1.0.2
+225 silly idealTree ├── loose-envify@1.2.0
+225 silly idealTree ├── lowercase-keys@1.0.0
+225 silly idealTree ├── make-error-cause@1.2.1
+225 silly idealTree ├── make-error@1.2.1
+225 silly idealTree ├── methods@1.1.2
+225 silly idealTree ├── mime-db@1.12.0
+225 silly idealTree ├── mime-types@2.0.14
+225 silly idealTree ├── minimatch@3.0.3
+225 silly idealTree ├── minimist@1.2.0
+225 silly idealTree ├─┬ mkdirp@0.5.1
+225 silly idealTree │ └── minimist@0.0.8
+225 silly idealTree ├── ms@0.7.1
+225 silly idealTree ├── node-status-codes@1.0.0
+225 silly idealTree ├── nopt@1.0.10
+225 silly idealTree ├── number-is-nan@1.0.0
+225 silly idealTree ├── object-assign@4.1.0
+225 silly idealTree ├── object.pick@1.1.2
+225 silly idealTree ├── once@1.4.0
+225 silly idealTree ├── os-homedir@1.0.1
+225 silly idealTree ├── os-tmpdir@1.0.1
+225 silly idealTree ├── osenv@0.1.3
+225 silly idealTree ├─┬ package-json@2.4.0
+225 silly idealTree │ └── semver@5.3.0
+225 silly idealTree ├── parse-json@2.2.0
+225 silly idealTree ├── path-is-absolute@1.0.0
+225 silly idealTree ├── pinkie-promise@2.0.1
+225 silly idealTree ├── pinkie@2.0.4
+225 silly idealTree ├── popsicle-proxy-agent@1.0.0
+225 silly idealTree ├── popsicle-retry@2.0.0
+225 silly idealTree ├── popsicle-status@1.0.2
+225 silly idealTree ├── popsicle@5.0.1
+225 silly idealTree ├── prepend-http@1.0.4
+225 silly idealTree ├── process-nextick-args@1.0.7
+225 silly idealTree ├── promise-finally@2.2.1
+225 silly idealTree ├── rc@1.1.6
+225 silly idealTree ├── read-all-stream@3.1.0
+225 silly idealTree ├── readable-stream@2.0.6
+225 silly idealTree ├── reflect-metadata@0.1.2
+225 silly idealTree ├── registry-auth-token@3.0.1
+225 silly idealTree ├── registry-url@3.1.0
+225 silly idealTree ├── repeating@2.0.1
+225 silly idealTree ├── rimraf@2.5.4
+225 silly idealTree ├── rxjs@5.0.0-beta.2
+225 silly idealTree ├── semver-diff@2.1.0
+225 silly idealTree ├── semver@5.0.3
+225 silly idealTree ├── slide@1.1.6
+225 silly idealTree ├── sort-keys@1.1.2
+225 silly idealTree ├── string_decoder@0.10.31
+225 silly idealTree ├── string-template@1.0.0
+225 silly idealTree ├── string-width@1.0.2
+225 silly idealTree ├── strip-ansi@3.0.1
+225 silly idealTree ├── strip-bom@2.0.0
+225 silly idealTree ├── strip-json-comments@1.0.4
+225 silly idealTree ├── supports-color@2.0.0
+225 silly idealTree ├── systemjs@0.19.26
+225 silly idealTree ├── thenify@3.2.0
+225 silly idealTree ├── throat@2.0.2
+225 silly idealTree ├── timed-out@2.0.0
+225 silly idealTree ├── touch@1.0.0
+225 silly idealTree ├── tough-cookie@2.3.1
+225 silly idealTree ├── typedarray@0.0.6
+225 silly idealTree ├── typescript@1.8.10
+225 silly idealTree ├─┬ typings-core@0.2.16
+225 silly idealTree │ └── typescript@1.8.9
+225 silly idealTree ├── typings@0.7.12
+225 silly idealTree ├── unc-path-regex@0.1.2
+225 silly idealTree ├── unzip-response@1.0.1
+225 silly idealTree ├── update-notifier@0.6.3
+225 silly idealTree ├── url-parse-lax@1.0.0
+225 silly idealTree ├── util-deprecate@1.0.2
+225 silly idealTree ├── uuid@2.0.3
+225 silly idealTree ├── wcwidth@1.0.1
+225 silly idealTree ├── when@3.7.7
+225 silly idealTree ├── widest-line@1.0.0
+225 silly idealTree ├── wordwrap@1.0.0
+225 silly idealTree ├── wrappy@1.0.2
+225 silly idealTree ├── write-file-atomic@1.2.0
+225 silly idealTree ├── xdg-basedir@2.0.0
+225 silly idealTree ├── xtend@4.0.1
+225 silly idealTree ├── zip-object@0.1.0
+225 silly idealTree └── zone.js@0.6.10
+226 silly generateActionsToTake Starting
+227 silly install generateActionsToTake
+228 silly generateActionsToTake Finishing
+229 silly diffTrees action count 6
+230 silly diffTrees add js-tokens@1.0.3
+231 silly diffTrees add loose-envify@1.2.0
+232 silly diffTrees add invariant@2.2.1
+233 silly diffTrees add typescript@1.8.9
+234 silly diffTrees add typings-core@0.2.16
+235 silly diffTrees add typings@0.7.12
+236 silly decomposeActions action count 48
+237 silly decomposeActions fetch js-tokens@1.0.3
+238 silly decomposeActions extract js-tokens@1.0.3
+239 silly decomposeActions test js-tokens@1.0.3
+240 silly decomposeActions preinstall js-tokens@1.0.3
+241 silly decomposeActions build js-tokens@1.0.3
+242 silly decomposeActions install js-tokens@1.0.3
+243 silly decomposeActions postinstall js-tokens@1.0.3
+244 silly decomposeActions finalize js-tokens@1.0.3
+245 silly decomposeActions fetch loose-envify@1.2.0
+246 silly decomposeActions extract loose-envify@1.2.0
+247 silly decomposeActions test loose-envify@1.2.0
+248 silly decomposeActions preinstall loose-envify@1.2.0
+249 silly decomposeActions build loose-envify@1.2.0
+250 silly decomposeActions install loose-envify@1.2.0
+251 silly decomposeActions postinstall loose-envify@1.2.0
+252 silly decomposeActions finalize loose-envify@1.2.0
+253 silly decomposeActions fetch invariant@2.2.1
+254 silly decomposeActions extract invariant@2.2.1
+255 silly decomposeActions test invariant@2.2.1
+256 silly decomposeActions preinstall invariant@2.2.1
+257 silly decomposeActions build invariant@2.2.1
+258 silly decomposeActions install invariant@2.2.1
+259 silly decomposeActions postinstall invariant@2.2.1
+260 silly decomposeActions finalize invariant@2.2.1
+261 silly decomposeActions fetch typescript@1.8.9
+262 silly decomposeActions extract typescript@1.8.9
+263 silly decomposeActions test typescript@1.8.9
+264 silly decomposeActions preinstall typescript@1.8.9
+265 silly decomposeActions build typescript@1.8.9
+266 silly decomposeActions install typescript@1.8.9
+267 silly decomposeActions postinstall typescript@1.8.9
+268 silly decomposeActions finalize typescript@1.8.9
+269 silly decomposeActions fetch typings-core@0.2.16
+270 silly decomposeActions extract typings-core@0.2.16
+271 silly decomposeActions test typings-core@0.2.16
+272 silly decomposeActions preinstall typings-core@0.2.16
+273 silly decomposeActions build typings-core@0.2.16
+274 silly decomposeActions install typings-core@0.2.16
+275 silly decomposeActions postinstall typings-core@0.2.16
+276 silly decomposeActions finalize typings-core@0.2.16
+277 silly decomposeActions fetch typings@0.7.12
+278 silly decomposeActions extract typings@0.7.12
+279 silly decomposeActions test typings@0.7.12
+280 silly decomposeActions preinstall typings@0.7.12
+281 silly decomposeActions build typings@0.7.12
+282 silly decomposeActions install typings@0.7.12
+283 silly decomposeActions postinstall typings@0.7.12
+284 silly decomposeActions finalize typings@0.7.12
+285 silly executeActions Starting
+286 silly install executeActions
+287 silly doSerial global-install 0
+288 silly doParallel fetch 6
+289 verbose lock using /home/todd/.npm/_locks/staging-0acd05349f2fd3f1.lock for /media/sf_VBShare/ruby/blog/node_modules/.staging
+290 silly doParallel extract 6
+291 silly extract js-tokens@1.0.3
+292 silly extract loose-envify@1.2.0
+293 silly extract invariant@2.2.1
+294 silly extract typescript@1.8.9
+295 silly extract typings-core@0.2.16
+296 silly extract typings@0.7.12
+297 verbose unbuild node_modules/.staging/js-tokens-246ae2d5
+298 verbose unbuild node_modules/.staging/invariant-b9251b8e
+299 verbose unbuild node_modules/.staging/typings-core-504be094
+300 verbose unbuild node_modules/.staging/loose-envify-82e1626a
+301 verbose unbuild node_modules/.staging/typescript-991ef952
+302 verbose unbuild node_modules/.staging/typings-2ded7bdf
+303 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5 is being purged from base /media/sf_VBShare/ruby/blog
+304 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5
+305 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e is being purged from base /media/sf_VBShare/ruby/blog
+306 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e
+307 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094 is being purged from base /media/sf_VBShare/ruby/blog
+308 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094
+309 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a is being purged from base /media/sf_VBShare/ruby/blog
+310 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a
+311 verbose tar unpack /home/todd/.npm/js-tokens/1.0.3/package.tgz
+312 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5
+313 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5 is being purged
+314 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5
+315 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952 is being purged from base /media/sf_VBShare/ruby/blog
+316 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952
+317 verbose tar unpack /home/todd/.npm/invariant/2.2.1/package.tgz
+318 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e
+319 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e is being purged
+320 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e
+321 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf is being purged from base /media/sf_VBShare/ruby/blog
+322 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf
+323 verbose tar unpack /home/todd/.npm/typings-core/0.2.16/package.tgz
+324 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094
+325 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094 is being purged
+326 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094
+327 verbose tar unpack /home/todd/.npm/loose-envify/1.2.0/package.tgz
+328 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a
+329 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a is being purged
+330 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a
+331 silly gunzTarPerm modes [ '775', '664' ]
+332 verbose tar unpack /home/todd/.npm/typescript/1.8.9/package.tgz
+333 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952
+334 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952 is being purged
+335 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952
+336 silly gunzTarPerm modes [ '775', '664' ]
+337 verbose tar unpack /home/todd/.npm/typings/0.7.12/package.tgz
+338 verbose tar unpacking to /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf
+339 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf is being purged
+340 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf
+341 silly gunzTarPerm modes [ '775', '664' ]
+342 silly gunzTarPerm modes [ '775', '664' ]
+343 silly gunzTarPerm modes [ '775', '664' ]
+344 silly gunzTarPerm modes [ '775', '664' ]
+345 silly gunzTarPerm extractEntry package.json
+346 silly gunzTarPerm extractEntry package.json
+347 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+348 silly gunzTarPerm extractEntry package.json
+349 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+350 silly gunzTarPerm extractEntry package.json
+351 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+352 silly gunzTarPerm extractEntry package.json
+353 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+354 silly gunzTarPerm extractEntry package.json
+355 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+356 silly gunzTarPerm extractEntry LICENSE
+357 silly gunzTarPerm extractEntry index.js
+358 silly gunzTarPerm extractEntry README.md
+359 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+360 silly gunzTarPerm extractEntry browser.js
+361 silly gunzTarPerm modified mode [ 'browser.js', 420, 436 ]
+362 silly gunzTarPerm extractEntry README.md
+363 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+364 silly gunzTarPerm extractEntry LICENSE
+365 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+366 silly gunzTarPerm extractEntry .npmignore
+367 silly gunzTarPerm modified mode [ '.npmignore', 384, 436 ]
+368 silly gunzTarPerm extractEntry README.md
+369 silly gunzTarPerm modified mode [ 'README.md', 384, 436 ]
+370 silly gunzTarPerm extractEntry .npmignore
+371 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+372 silly gunzTarPerm extractEntry README.md
+373 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+374 silly gunzTarPerm extractEntry README.md
+375 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+376 silly gunzTarPerm extractEntry LICENSE
+377 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+378 silly gunzTarPerm extractEntry changelog.md
+379 silly gunzTarPerm extractEntry readme.md
+380 silly gunzTarPerm extractEntry dist/view.js
+381 silly gunzTarPerm modified mode [ 'dist/view.js', 420, 436 ]
+382 silly gunzTarPerm extractEntry dist/install.js
+383 silly gunzTarPerm modified mode [ 'dist/install.js', 420, 436 ]
+384 silly gunzTarPerm extractEntry invariant.js
+385 silly gunzTarPerm modified mode [ 'invariant.js', 420, 436 ]
+386 silly gunzTarPerm extractEntry CHANGELOG.md
+387 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+388 silly gunzTarPerm extractEntry bin/tsc
+389 silly gunzTarPerm modified mode [ 'bin/tsc', 438, 436 ]
+390 silly gunzTarPerm extractEntry bin/tsserver
+391 silly gunzTarPerm modified mode [ 'bin/tsserver', 438, 436 ]
+392 silly gunzTarPerm extractEntry index.js
+393 silly gunzTarPerm modified mode [ 'index.js', 384, 436 ]
+394 silly gunzTarPerm extractEntry cli.js
+395 silly gunzTarPerm modified mode [ 'cli.js', 493, 509 ]
+396 silly gunzTarPerm extractEntry dist/typings.js
+397 silly gunzTarPerm modified mode [ 'dist/typings.js', 420, 436 ]
+398 silly gunzTarPerm extractEntry dist/bin-init.js
+399 silly gunzTarPerm modified mode [ 'dist/bin-init.js', 420, 436 ]
+400 silly gunzTarPerm extractEntry dist/interfaces.js
+401 silly gunzTarPerm modified mode [ 'dist/interfaces.js', 420, 436 ]
+402 silly gunzTarPerm extractEntry AUTHORS.md
+403 silly gunzTarPerm modified mode [ 'AUTHORS.md', 438, 436 ]
+404 silly gunzTarPerm extractEntry CONTRIBUTING.md
+405 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 436 ]
+406 silly gunzTarPerm extractEntry custom.js
+407 silly gunzTarPerm modified mode [ 'custom.js', 384, 436 ]
+408 silly gunzTarPerm extractEntry loose-envify.js
+409 silly gunzTarPerm modified mode [ 'loose-envify.js', 384, 436 ]
+410 silly gunzTarPerm extractEntry dist/bin-install.js
+411 silly gunzTarPerm modified mode [ 'dist/bin-install.js', 420, 436 ]
+412 silly gunzTarPerm extractEntry dist/bin-list.js
+413 silly gunzTarPerm modified mode [ 'dist/bin-list.js', 420, 436 ]
+414 silly gunzTarPerm extractEntry dist/list.js
+415 silly gunzTarPerm modified mode [ 'dist/list.js', 420, 436 ]
+416 silly gunzTarPerm extractEntry dist/init.js
+417 silly gunzTarPerm modified mode [ 'dist/init.js', 420, 436 ]
+418 silly gunzTarPerm extractEntry CopyrightNotice.txt
+419 silly gunzTarPerm modified mode [ 'CopyrightNotice.txt', 438, 436 ]
+420 silly gunzTarPerm extractEntry dist/bin-open.js
+421 silly gunzTarPerm modified mode [ 'dist/bin-open.js', 420, 436 ]
+422 silly gunzTarPerm extractEntry dist/bin-bundle.js
+423 silly gunzTarPerm modified mode [ 'dist/bin-bundle.js', 420, 436 ]
+424 silly gunzTarPerm extractEntry dist/bin-search.js
+425 silly gunzTarPerm modified mode [ 'dist/bin-search.js', 420, 436 ]
+426 silly gunzTarPerm extractEntry dist/bin-uninstall.js
+427 silly gunzTarPerm modified mode [ 'dist/bin-uninstall.js', 420, 436 ]
+428 silly gunzTarPerm extractEntry dist/bin-view.js
+429 silly gunzTarPerm modified mode [ 'dist/bin-view.js', 420, 436 ]
+430 silly gunzTarPerm extractEntry dist/bin.js
+431 silly gunzTarPerm modified mode [ 'dist/bin.js', 420, 436 ]
+432 silly gunzTarPerm extractEntry dist/aliases.js
+433 silly gunzTarPerm modified mode [ 'dist/aliases.js', 420, 436 ]
+434 silly gunzTarPerm extractEntry dist/bin-open.js.map
+435 silly gunzTarPerm modified mode [ 'dist/bin-open.js.map', 420, 436 ]
+436 silly gunzTarPerm extractEntry dist/bin-list.d.ts
+437 silly gunzTarPerm modified mode [ 'dist/bin-list.d.ts', 420, 436 ]
+438 silly gunzTarPerm extractEntry dist/aliases.d.ts
+439 silly gunzTarPerm modified mode [ 'dist/aliases.d.ts', 420, 436 ]
+440 silly gunzTarPerm extractEntry dist/bin-list.js.map
+441 silly gunzTarPerm modified mode [ 'dist/bin-list.js.map', 420, 436 ]
+442 silly gunzTarPerm extractEntry dist/bin-open.d.ts
+443 silly gunzTarPerm modified mode [ 'dist/bin-open.d.ts', 420, 436 ]
+444 silly gunzTarPerm extractEntry dist/bin-bundle.js.map
+445 silly gunzTarPerm modified mode [ 'dist/bin-bundle.js.map', 420, 436 ]
+446 silly gunzTarPerm extractEntry dist/bin-init.d.ts
+447 silly gunzTarPerm modified mode [ 'dist/bin-init.d.ts', 420, 436 ]
+448 silly gunzTarPerm extractEntry dist/bin-search.d.ts
+449 silly gunzTarPerm modified mode [ 'dist/bin-search.d.ts', 420, 436 ]
+450 silly gunzTarPerm extractEntry dist/aliases.js.map
+451 silly gunzTarPerm modified mode [ 'dist/aliases.js.map', 420, 436 ]
+452 silly gunzTarPerm extractEntry dist/bin-search.js.map
+453 silly gunzTarPerm modified mode [ 'dist/bin-search.js.map', 420, 436 ]
+454 silly gunzTarPerm extractEntry dist/bin-uninstall.d.ts
+455 silly gunzTarPerm modified mode [ 'dist/bin-uninstall.d.ts', 420, 436 ]
+456 silly gunzTarPerm extractEntry dist/bin-init.js.map
+457 silly gunzTarPerm modified mode [ 'dist/bin-init.js.map', 420, 436 ]
+458 silly gunzTarPerm extractEntry dist/bin-uninstall.js.map
+459 silly gunzTarPerm modified mode [ 'dist/bin-uninstall.js.map', 420, 436 ]
+460 silly gunzTarPerm extractEntry dist/bin-view.d.ts
+461 silly gunzTarPerm modified mode [ 'dist/bin-view.d.ts', 420, 436 ]
+462 silly gunzTarPerm extractEntry dist/bin-install.d.ts
+463 silly gunzTarPerm modified mode [ 'dist/bin-install.d.ts', 420, 436 ]
+464 silly gunzTarPerm extractEntry dist/bin-view.js.map
+465 silly gunzTarPerm modified mode [ 'dist/bin-view.js.map', 420, 436 ]
+466 silly gunzTarPerm extractEntry dist/bin.d.ts
+467 silly gunzTarPerm modified mode [ 'dist/bin.d.ts', 420, 436 ]
+468 silly gunzTarPerm extractEntry dist/bin-bundle.d.ts
+469 silly gunzTarPerm modified mode [ 'dist/bin-bundle.d.ts', 420, 436 ]
+470 silly gunzTarPerm extractEntry dist/bin.js.map
+471 silly gunzTarPerm modified mode [ 'dist/bin.js.map', 420, 436 ]
+472 silly gunzTarPerm extractEntry dist/support/cli.js
+473 silly gunzTarPerm modified mode [ 'dist/support/cli.js', 420, 436 ]
+474 silly gunzTarPerm extractEntry dist/support/cli.d.ts
+475 silly gunzTarPerm modified mode [ 'dist/support/cli.d.ts', 420, 436 ]
+476 silly gunzTarPerm extractEntry dist/support/cli.js.map
+477 silly gunzTarPerm modified mode [ 'dist/support/cli.js.map', 420, 436 ]
+478 silly gunzTarPerm extractEntry dist/typings.d.ts
+479 silly gunzTarPerm modified mode [ 'dist/typings.d.ts', 420, 436 ]
+480 silly gunzTarPerm extractEntry dist/bin-install.js.map
+481 silly gunzTarPerm modified mode [ 'dist/bin-install.js.map', 420, 436 ]
+482 silly gunzTarPerm extractEntry dist/typings.js.map
+483 silly gunzTarPerm modified mode [ 'dist/typings.js.map', 420, 436 ]
+484 silly gunzTarPerm extractEntry typings.json
+485 silly gunzTarPerm modified mode [ 'typings.json', 420, 436 ]
+486 silly gunzTarPerm extractEntry replace.js
+487 silly gunzTarPerm modified mode [ 'replace.js', 420, 436 ]
+488 silly gunzTarPerm extractEntry dist/open.js
+489 silly gunzTarPerm modified mode [ 'dist/open.js', 420, 436 ]
+490 silly gunzTarPerm extractEntry dist/search.js
+491 silly gunzTarPerm modified mode [ 'dist/search.js', 420, 436 ]
+492 silly gunzTarPerm extractEntry LICENSE.txt
+493 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 436 ]
+494 silly gunzTarPerm extractEntry ThirdPartyNoticeText.txt
+495 silly gunzTarPerm modified mode [ 'ThirdPartyNoticeText.txt', 438, 436 ]
+496 silly gunzTarPerm extractEntry lib/README.md
+497 silly gunzTarPerm modified mode [ 'lib/README.md', 438, 436 ]
+498 silly gunzTarPerm extractEntry lib/typescript.js
+499 silly gunzTarPerm modified mode [ 'lib/typescript.js', 438, 436 ]
+500 silly gunzTarPerm extractEntry dist/typings.js
+501 silly gunzTarPerm modified mode [ 'dist/typings.js', 420, 436 ]
+502 silly gunzTarPerm extractEntry dist/uninstall.js
+503 silly gunzTarPerm modified mode [ 'dist/uninstall.js', 420, 436 ]
+504 silly gunzTarPerm extractEntry dist/bundle.js
+505 silly gunzTarPerm modified mode [ 'dist/bundle.js', 420, 436 ]
+506 silly gunzTarPerm extractEntry dist/list.js.map
+507 silly gunzTarPerm modified mode [ 'dist/list.js.map', 420, 436 ]
+508 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5/node_modules is being purged
+509 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5/node_modules
+510 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e/node_modules is being purged
+511 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e/node_modules
+512 silly gunzTarPerm extractEntry dist/init.d.ts
+513 silly gunzTarPerm modified mode [ 'dist/init.d.ts', 420, 436 ]
+514 silly gunzTarPerm extractEntry dist/interfaces.js.map
+515 silly gunzTarPerm modified mode [ 'dist/interfaces.js.map', 420, 436 ]
+516 silly gunzTarPerm extractEntry dist/lib/compile.js
+517 silly gunzTarPerm modified mode [ 'dist/lib/compile.js', 420, 436 ]
+518 silly gunzTarPerm extractEntry dist/lib/dependencies.js
+519 silly gunzTarPerm modified mode [ 'dist/lib/dependencies.js', 420, 436 ]
+520 silly gunzTarPerm extractEntry dist/lib/error.js
+521 silly gunzTarPerm modified mode [ 'dist/lib/error.js', 420, 436 ]
+522 silly gunzTarPerm extractEntry dist/lib/compile.d.ts
+523 silly gunzTarPerm modified mode [ 'dist/lib/compile.d.ts', 420, 436 ]
+524 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a/node_modules is being purged
+525 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a/node_modules
+526 silly gunzTarPerm extractEntry dist/lib/compile.js.map
+527 silly gunzTarPerm modified mode [ 'dist/lib/compile.js.map', 420, 436 ]
+528 silly gunzTarPerm extractEntry dist/lib/dependencies.d.ts
+529 silly gunzTarPerm modified mode [ 'dist/lib/dependencies.d.ts', 420, 436 ]
+530 silly gunzTarPerm extractEntry dist/lib/dependencies.js.map
+531 silly gunzTarPerm modified mode [ 'dist/lib/dependencies.js.map', 420, 436 ]
+532 silly gunzTarPerm extractEntry dist/lib/error.d.ts
+533 silly gunzTarPerm modified mode [ 'dist/lib/error.d.ts', 420, 436 ]
+534 silly gunzTarPerm extractEntry lib/tsserver.js
+535 silly gunzTarPerm modified mode [ 'lib/tsserver.js', 438, 436 ]
+536 silly gunzTarPerm extractEntry dist/lib/error.js.map
+537 silly gunzTarPerm modified mode [ 'dist/lib/error.js.map', 420, 436 ]
+538 silly gunzTarPerm extractEntry dist/list.d.ts
+539 silly gunzTarPerm modified mode [ 'dist/list.d.ts', 420, 436 ]
+540 silly gunzTarPerm extractEntry dist/bundle.d.ts
+541 silly gunzTarPerm modified mode [ 'dist/bundle.d.ts', 420, 436 ]
+542 silly gunzTarPerm extractEntry dist/init.js.map
+543 silly gunzTarPerm modified mode [ 'dist/init.js.map', 420, 436 ]
+544 silly gunzTarPerm extractEntry dist/open.d.ts
+545 silly gunzTarPerm modified mode [ 'dist/open.d.ts', 420, 436 ]
+546 silly gunzTarPerm extractEntry dist/install.d.ts
+547 silly gunzTarPerm modified mode [ 'dist/install.d.ts', 420, 436 ]
+548 silly gunzTarPerm extractEntry dist/open.js.map
+549 silly gunzTarPerm modified mode [ 'dist/open.js.map', 420, 436 ]
+550 silly gunzTarPerm extractEntry dist/search.d.ts
+551 silly gunzTarPerm modified mode [ 'dist/search.d.ts', 420, 436 ]
+552 silly gunzTarPerm extractEntry lib/tsc.js
+553 silly gunzTarPerm modified mode [ 'lib/tsc.js', 438, 436 ]
+554 silly gunzTarPerm extractEntry dist/bundle.js.map
+555 silly gunzTarPerm modified mode [ 'dist/bundle.js.map', 420, 436 ]
+556 silly gunzTarPerm extractEntry dist/search.js.map
+557 silly gunzTarPerm modified mode [ 'dist/search.js.map', 420, 436 ]
+558 silly gunzTarPerm extractEntry dist/typings.d.ts
+559 silly gunzTarPerm modified mode [ 'dist/typings.d.ts', 420, 436 ]
+560 silly gunzTarPerm extractEntry dist/install.js.map
+561 silly gunzTarPerm modified mode [ 'dist/install.js.map', 420, 436 ]
+562 silly gunzTarPerm extractEntry dist/typings.js.map
+563 silly gunzTarPerm modified mode [ 'dist/typings.js.map', 420, 436 ]
+564 silly gunzTarPerm extractEntry dist/uninstall.d.ts
+565 silly gunzTarPerm modified mode [ 'dist/uninstall.d.ts', 420, 436 ]
+566 silly gunzTarPerm extractEntry lib/typescriptServices.js
+567 silly gunzTarPerm modified mode [ 'lib/typescriptServices.js', 438, 436 ]
+568 silly gunzTarPerm extractEntry dist/interfaces/dependencies.js
+569 silly gunzTarPerm modified mode [ 'dist/interfaces/dependencies.js', 420, 436 ]
+570 silly gunzTarPerm extractEntry dist/interfaces/config.js
+571 silly gunzTarPerm modified mode [ 'dist/interfaces/config.js', 420, 436 ]
+572 silly gunzTarPerm extractEntry dist/interfaces/emitter.js
+573 silly gunzTarPerm modified mode [ 'dist/interfaces/emitter.js', 420, 436 ]
+574 silly gunzTarPerm extractEntry dist/interfaces/rc.js
+575 silly gunzTarPerm modified mode [ 'dist/interfaces/rc.js', 420, 436 ]
+576 silly gunzTarPerm extractEntry dist/interfaces/emitter.d.ts
+577 silly gunzTarPerm modified mode [ 'dist/interfaces/emitter.d.ts', 420, 436 ]
+578 silly gunzTarPerm extractEntry dist/interfaces/dependencies.js.map
+579 silly gunzTarPerm modified mode [ 'dist/interfaces/dependencies.js.map', 420, 436 ]
+580 silly gunzTarPerm extractEntry dist/interfaces/config.js.map
+581 silly gunzTarPerm modified mode [ 'dist/interfaces/config.js.map', 420, 436 ]
+582 silly gunzTarPerm extractEntry dist/interfaces/dependencies.d.ts
+583 silly gunzTarPerm modified mode [ 'dist/interfaces/dependencies.d.ts', 420, 436 ]
+584 silly gunzTarPerm extractEntry lib/lib.d.ts
+585 silly gunzTarPerm modified mode [ 'lib/lib.d.ts', 438, 436 ]
+586 silly gunzTarPerm extractEntry dist/interfaces/emitter.js.map
+587 silly gunzTarPerm modified mode [ 'dist/interfaces/emitter.js.map', 420, 436 ]
+588 silly gunzTarPerm extractEntry dist/interfaces/rc.d.ts
+589 silly gunzTarPerm modified mode [ 'dist/interfaces/rc.d.ts', 420, 436 ]
+590 silly gunzTarPerm extractEntry lib/lib.dom.d.ts
+591 silly gunzTarPerm modified mode [ 'lib/lib.dom.d.ts', 438, 436 ]
+592 silly gunzTarPerm extractEntry dist/interfaces/config.d.ts
+593 silly gunzTarPerm modified mode [ 'dist/interfaces/config.d.ts', 420, 436 ]
+594 silly gunzTarPerm extractEntry dist/interfaces/rc.js.map
+595 silly gunzTarPerm modified mode [ 'dist/interfaces/rc.js.map', 420, 436 ]
+596 silly gunzTarPerm extractEntry lib/lib.es7.d.ts
+597 silly gunzTarPerm modified mode [ 'lib/lib.es7.d.ts', 438, 436 ]
+598 silly gunzTarPerm extractEntry lib/lib.core.d.ts
+599 silly gunzTarPerm modified mode [ 'lib/lib.core.d.ts', 438, 436 ]
+600 silly gunzTarPerm extractEntry dist/uninstall.js.map
+601 silly gunzTarPerm modified mode [ 'dist/uninstall.js.map', 420, 436 ]
+602 silly gunzTarPerm extractEntry dist/utils/parse.js
+603 silly gunzTarPerm modified mode [ 'dist/utils/parse.js', 420, 436 ]
+604 silly gunzTarPerm extractEntry lib/lib.webworker.d.ts
+605 silly gunzTarPerm modified mode [ 'lib/lib.webworker.d.ts', 438, 436 ]
+606 silly gunzTarPerm extractEntry lib/lib.es6.d.ts
+607 silly gunzTarPerm modified mode [ 'lib/lib.es6.d.ts', 438, 436 ]
+608 silly gunzTarPerm extractEntry dist/utils/debug.js
+609 silly gunzTarPerm modified mode [ 'dist/utils/debug.js', 420, 436 ]
+610 silly gunzTarPerm extractEntry dist/utils/find.js
+611 silly gunzTarPerm modified mode [ 'dist/utils/find.js', 420, 436 ]
+612 silly gunzTarPerm extractEntry lib/lib.core.es7.d.ts
+613 silly gunzTarPerm modified mode [ 'lib/lib.core.es7.d.ts', 438, 436 ]
+614 silly gunzTarPerm extractEntry lib/typescript.d.ts
+615 silly gunzTarPerm modified mode [ 'lib/typescript.d.ts', 438, 436 ]
+616 silly gunzTarPerm extractEntry lib/lib.core.es6.d.ts
+617 silly gunzTarPerm modified mode [ 'lib/lib.core.es6.d.ts', 438, 436 ]
+618 silly gunzTarPerm extractEntry lib/typescriptServices.d.ts
+619 silly gunzTarPerm modified mode [ 'lib/typescriptServices.d.ts', 438, 436 ]
+620 silly gunzTarPerm extractEntry dist/utils/fs.js
+621 silly gunzTarPerm modified mode [ 'dist/utils/fs.js', 420, 436 ]
+622 silly gunzTarPerm extractEntry dist/utils/config.js
+623 silly gunzTarPerm modified mode [ 'dist/utils/config.js', 420, 436 ]
+624 silly gunzTarPerm extractEntry lib/lib.scriptHost.d.ts
+625 silly gunzTarPerm modified mode [ 'lib/lib.scriptHost.d.ts', 438, 436 ]
+626 silly gunzTarPerm extractEntry test.config
+627 silly gunzTarPerm modified mode [ 'test.config', 438, 436 ]
+628 silly gunzTarPerm extractEntry dist/utils/path.js
+629 silly gunzTarPerm modified mode [ 'dist/utils/path.js', 420, 436 ]
+630 silly gunzTarPerm extractEntry dist/utils/rc.js
+631 silly gunzTarPerm modified mode [ 'dist/utils/rc.js', 420, 436 ]
+632 silly gunzTarPerm extractEntry dist/utils/references.js
+633 silly gunzTarPerm modified mode [ 'dist/utils/references.js', 420, 436 ]
+634 silly gunzTarPerm extractEntry dist/utils/store.js
+635 silly gunzTarPerm modified mode [ 'dist/utils/store.js', 420, 436 ]
+636 silly gunzTarPerm extractEntry dist/utils/fs.d.ts
+637 silly gunzTarPerm modified mode [ 'dist/utils/fs.d.ts', 420, 436 ]
+638 silly gunzTarPerm extractEntry dist/utils/debug.d.ts
+639 silly gunzTarPerm modified mode [ 'dist/utils/debug.d.ts', 420, 436 ]
+640 silly gunzTarPerm extractEntry dist/utils/fs.js.map
+641 silly gunzTarPerm modified mode [ 'dist/utils/fs.js.map', 420, 436 ]
+642 silly gunzTarPerm extractEntry dist/utils/parse.d.ts
+643 silly gunzTarPerm modified mode [ 'dist/utils/parse.d.ts', 420, 436 ]
+644 silly gunzTarPerm extractEntry dist/utils/config.d.ts
+645 silly gunzTarPerm modified mode [ 'dist/utils/config.d.ts', 420, 436 ]
+646 silly gunzTarPerm extractEntry dist/utils/parse.js.map
+647 silly gunzTarPerm modified mode [ 'dist/utils/parse.js.map', 420, 436 ]
+648 silly gunzTarPerm extractEntry dist/utils/path.d.ts
+649 silly gunzTarPerm modified mode [ 'dist/utils/path.d.ts', 420, 436 ]
+650 silly gunzTarPerm extractEntry dist/utils/debug.js.map
+651 silly gunzTarPerm modified mode [ 'dist/utils/debug.js.map', 420, 436 ]
+652 silly gunzTarPerm extractEntry dist/utils/path.js.map
+653 silly gunzTarPerm modified mode [ 'dist/utils/path.js.map', 420, 436 ]
+654 silly gunzTarPerm extractEntry dist/utils/rc.d.ts
+655 silly gunzTarPerm modified mode [ 'dist/utils/rc.d.ts', 420, 436 ]
+656 silly gunzTarPerm extractEntry dist/utils/find.d.ts
+657 silly gunzTarPerm modified mode [ 'dist/utils/find.d.ts', 420, 436 ]
+658 silly gunzTarPerm extractEntry dist/utils/rc.js.map
+659 silly gunzTarPerm modified mode [ 'dist/utils/rc.js.map', 420, 436 ]
+660 silly gunzTarPerm extractEntry dist/utils/references.d.ts
+661 silly gunzTarPerm modified mode [ 'dist/utils/references.d.ts', 420, 436 ]
+662 silly gunzTarPerm extractEntry dist/utils/config.js.map
+663 silly gunzTarPerm modified mode [ 'dist/utils/config.js.map', 420, 436 ]
+664 silly gunzTarPerm extractEntry dist/utils/references.js.map
+665 silly gunzTarPerm modified mode [ 'dist/utils/references.js.map', 420, 436 ]
+666 silly gunzTarPerm extractEntry dist/utils/store.d.ts
+667 silly gunzTarPerm modified mode [ 'dist/utils/store.d.ts', 420, 436 ]
+668 silly gunzTarPerm extractEntry dist/utils/find.js.map
+669 silly gunzTarPerm modified mode [ 'dist/utils/find.js.map', 420, 436 ]
+670 silly gunzTarPerm extractEntry dist/utils/store.js.map
+671 silly gunzTarPerm modified mode [ 'dist/utils/store.js.map', 420, 436 ]
+672 silly gunzTarPerm extractEntry dist/view.d.ts
+673 silly gunzTarPerm modified mode [ 'dist/view.d.ts', 420, 436 ]
+674 silly gunzTarPerm extractEntry dist/interfaces.d.ts
+675 silly gunzTarPerm modified mode [ 'dist/interfaces.d.ts', 420, 436 ]
+676 silly gunzTarPerm extractEntry dist/view.js.map
+677 silly gunzTarPerm modified mode [ 'dist/view.js.map', 420, 436 ]
+678 silly gunzTarPerm extractEntry typings.json
+679 silly gunzTarPerm modified mode [ 'typings.json', 420, 436 ]
+680 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf/node_modules is being purged
+681 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf/node_modules
+682 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094/node_modules is being purged
+683 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094/node_modules
+684 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952/node_modules is being purged
+685 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952/node_modules
+686 silly doParallel preinstall 6
+687 silly preinstall js-tokens@1.0.3 /media/sf_VBShare/ruby/blog/node_modules/.staging/js-tokens-246ae2d5
+688 info lifecycle js-tokens@1.0.3~preinstall: js-tokens@1.0.3
+689 silly preinstall loose-envify@1.2.0 /media/sf_VBShare/ruby/blog/node_modules/.staging/loose-envify-82e1626a
+690 info lifecycle loose-envify@1.2.0~preinstall: loose-envify@1.2.0
+691 silly preinstall invariant@2.2.1 /media/sf_VBShare/ruby/blog/node_modules/.staging/invariant-b9251b8e
+692 info lifecycle invariant@2.2.1~preinstall: invariant@2.2.1
+693 silly preinstall typescript@1.8.9 /media/sf_VBShare/ruby/blog/node_modules/.staging/typescript-991ef952
+694 info lifecycle typescript@1.8.9~preinstall: typescript@1.8.9
+695 silly preinstall typings-core@0.2.16 /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-core-504be094
+696 info lifecycle typings-core@0.2.16~preinstall: typings-core@0.2.16
+697 silly preinstall typings@0.7.12 /media/sf_VBShare/ruby/blog/node_modules/.staging/typings-2ded7bdf
+698 info lifecycle typings@0.7.12~preinstall: typings@0.7.12
+699 silly lifecycle js-tokens@1.0.3~preinstall: no script for preinstall, continuing
+700 silly lifecycle loose-envify@1.2.0~preinstall: no script for preinstall, continuing
+701 silly lifecycle typescript@1.8.9~preinstall: no script for preinstall, continuing
+702 silly lifecycle typings-core@0.2.16~preinstall: no script for preinstall, continuing
+703 silly lifecycle typings@0.7.12~preinstall: no script for preinstall, continuing
+704 silly lifecycle invariant@2.2.1~preinstall: no script for preinstall, continuing
+705 silly doReverseSerial remove 0
+706 silly doSerial move 0
+707 silly doSerial finalize 6
+708 silly finalize /media/sf_VBShare/ruby/blog/node_modules/js-tokens
+709 silly finalize /media/sf_VBShare/ruby/blog/node_modules/loose-envify
+710 silly finalize /media/sf_VBShare/ruby/blog/node_modules/invariant
+711 silly finalize /media/sf_VBShare/ruby/blog/node_modules/typings-core/node_modules/typescript
+712 silly finalize /media/sf_VBShare/ruby/blog/node_modules/typings-core
+713 silly finalize /media/sf_VBShare/ruby/blog/node_modules/typings
+714 silly doSerial build 6
+715 silly build js-tokens@1.0.3
+716 info linkStuff js-tokens@1.0.3
+717 silly linkStuff js-tokens@1.0.3 has /media/sf_VBShare/ruby/blog/node_modules as its parent node_modules
+718 verbose linkBins js-tokens@1.0.3
+719 verbose linkMans js-tokens@1.0.3
+720 silly build loose-envify@1.2.0
+721 info linkStuff loose-envify@1.2.0
+722 silly linkStuff loose-envify@1.2.0 has /media/sf_VBShare/ruby/blog/node_modules as its parent node_modules
+723 verbose linkBins loose-envify@1.2.0
+724 verbose link bins [ { 'loose-envify': 'cli.js' },
+724 verbose link bins   '/media/sf_VBShare/ruby/blog/node_modules/.bin',
+724 verbose link bins   false ]
+725 verbose linkMans loose-envify@1.2.0
+726 silly gentlyRm /media/sf_VBShare/ruby/blog/node_modules/.bin/loose-envify is being purged
+727 verbose gentlyRm don't care about contents; nuking /media/sf_VBShare/ruby/blog/node_modules/.bin/loose-envify
+728 verbose unlock done using /home/todd/.npm/_locks/staging-0acd05349f2fd3f1.lock for /media/sf_VBShare/ruby/blog/node_modules/.staging
+729 silly rollbackFailedOptional Starting
+730 silly rollbackFailedOptional Finishing
+731 silly runTopLevelLifecycles Starting
+732 silly runTopLevelLifecycles Finishing
+733 silly install printInstalled
+734 warn rails-ng2@0.0.1 No repository field.
+735 verbose stack Error: EROFS: read-only file system, symlink '../loose-envify/cli.js' -> '/media/sf_VBShare/ruby/blog/node_modules/.bin/loose-envify'
+735 verbose stack     at Error (native)
+736 verbose cwd /media/sf_VBShare/ruby/blog
+737 error Linux 4.4.0-42-generic
+738 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+739 error node v4.2.6
+740 error npm  v3.5.2
+741 error path ../loose-envify/cli.js
+742 error code EROFS
+743 error errno -30
+744 error syscall symlink
+745 error rofs EROFS: read-only file system, symlink '../loose-envify/cli.js' -> '/media/sf_VBShare/ruby/blog/node_modules/.bin/loose-envify'
+746 error rofs This is most likely not a problem with npm itself
+746 error rofs and is related to the file system being read-only.
+746 error rofs
+746 error rofs Often virtualized file systems, or other file systems
+746 error rofs that don't support symlinks, give this error.
+747 verbose exit [ -30, true ]
